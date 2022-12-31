@@ -1,12 +1,255 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Pawell2418 Gallery</title>
-  </head>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pawell2418: Gallery</title>
+	<meta name="description" content="Pawell2418_Gallery">
+	<meta name="author" content="Pawell2418">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="filter.js" defer type="text/javascript"></script>
+</head>
 <body>
+<header>
+	<nav>
+		<a href="https://pawell2418.github.io">
+			<img src="logo.png" title="Pawell2418 logo">Pawell2418
+		</a>
+		<a href="faq.html" title="Frequently asked questions">FAQ</a>
+		<a href="wisdom.html" title="Frequently asked questions">Wisdom</a>
+		<a href="https://twitter.com/Pawell2418" title="Pawell2418 on twitter">Twitter</a>
+		<a href="https://www.deviantart.com/pawell2418" title="Pawell2418 on DevianArt">DeviantArt</a>
+	</nav>
+	<hr>
+</header>
+<form id="filter">
+	<div class="filterOption">
+		<label for="Ratemin">Rating</label>
+		<input type="number" min="0" max="10" value="0" name="ratemin" id="Ratemin" class="inputNum">
+		<label for="Ratemax">~</label>
+		<input type="number" min="0" max="10" value="10" name="ratemax" id="Ratemax" class="inputNum">
+	</div>
+	<div class="filterOption">
+		<input type="date" name="datefr" id="Datefr" min="2000-01-01">
+		<label for="Datefr">Date</label>
+		<input type="date" name="dateto" id="Dateto" min="2000-01-01">
+	</div>
+	<div class="filterOption">
+		<input type="radio" id="sortdat" name="sort" value="dat" checked="checked">
+		<label for="sortdat">Sort by Date</label>
+		<input type="radio" id="sortrat" name="sort" value="rat">
+		<label for="sortrat">Sort by Rating</label>
+	</div>
+	<div class="filterOption">
+		<label for="Tags">Tags</label><input type="text" name="tags" id="Tags" readonly>
+	</div>
+	<div class="filterOption">
+		<input type="submit" value="Filter" id="SubmitButton">
+		<input type="reset" value="Reset" id="Reset">
+	</div>
+	<div id="filterOptionTags">
+	</div>
+</form>
+<hr>
+<article id="gallery">
+<h1 class="background">Gallery</h1>
+<!--HERE-->
+<a href='p/190.jpg' data-d='2022-12-28' data-r='5'><img src='m/190.jpg' title='digi,rebelle,color,study,nature,object,master,naturway'></a>
+<a href='p/189.jpg' data-d='2022-12-27' data-r='4'><img src='m/189.jpg' title='digi,rebelle,color,study,animal,nature,master,naturway'></a>
+<a href='p/188.jpg' data-d='2022-12-26' data-r='2'><img src='m/188.jpg' title='digi,gimp,mono,study,male,gesture,naturway'></a>
+<a href='p/187.jpg' data-d='2022-12-22' data-r='3'><img src='m/187.jpg' title='digi,rebelle,mono,study,male,female,naturway'></a>
+<a href='p/186.jpg' data-d='2022-12-21' data-r='4'><img src='m/186.jpg' title='digi,rebelle,mono,study,male,master,naturway'></a>
+<a href='p/185.jpg' data-d='2022-12-19' data-r='5'><img src='m/185.jpg' title='digi,gimp,mono,study,male,nude,naturway'></a>
+<a href='p/184.jpg' data-d='2022-12-18' data-r='4'><img src='m/184.jpg' title='digi,rebelle,color,study,male,female,gesture,master,naturway'></a>
+<a href='p/183.jpg' data-d='2022-12-16' data-r='3'><img src='m/183.jpg' title='digi,gimp,mono,study,female,gesture,naturway'></a>
+<a href='p/182.jpg' data-d='2022-12-13' data-r='3'><img src='m/182.jpg' title='digi,rebelle,color,art,male,nature,animal'></a>
+<a href='p/181.jpg' data-d='2022-12-12' data-r='4'><img src='m/181.jpg' title='digi,gimp,mono,study,male,gesture,naturway'></a>
+<a href='p/180.jpg' data-d='2022-12-10' data-r='4'><img src='m/180.jpg' title='digi,gimp,mono,study,male,body,naturway'></a>
+<a href='p/179.jpg' data-d='2022-12-09' data-r='3'><img src='m/179.jpg' title='digi,gimp,outline,study,male,body,naturway'></a>
+<a href='p/178.jpg' data-d='2022-12-08' data-r='3'><img src='m/178.jpg' title='digi,gimp,mono,study,female,nude,gesture,animal,naturway'></a>
+<a href='p/177.jpg' data-d='2022-12-06' data-r='5'><img src='m/177.jpg' title='digi,rebelle,mono,study,female,male,head,naturway,drapery'></a>
+<a href='p/176.jpg' data-d='2022-12-05' data-r='4'><img src='m/176.jpg' title='digi,gimp,mono,study,female,gesture,naturway'></a>
+<a href='p/175.jpg' data-d='2022-12-04' data-r='4'><img src='m/175.jpg' title='digi,rebelle,mono,study,female,naturway'></a>
+<a href='p/174.jpg' data-d='2022-12-03' data-r='4'><img src='m/174.jpg' title='digi,gimp,mono,study,male,female,master,naturway'></a>
+<a href='p/173.jpg' data-d='2022-12-02' data-r='3'><img src='m/173.jpg' title='digi,gimp,outline,study,male,nude,gesture,naturway'></a>
+<a href='p/172.jpg' data-d='2022-12-01' data-r='4'><img src='m/172.jpg' title='digi,gimp,mono,study,male,drapery,gesture,naturway'></a>
+<a href='p/171.jpg' data-d='2022-11-30' data-r='3'><img src='m/171.jpg' title='digi,gimp,mono,study,female,gesture,naturway'></a>
+<a href='p/170.jpg' data-d='2022-11-29' data-r='4'><img src='m/170.jpg' title='digi,gimp,mono,study,female,male,gesture,head,naturway'></a>
+<a href='p/169.jpg' data-d='2022-11-28' data-r='3'><img src='m/169.jpg' title='digi,gimp,mono,study,male,gesture,naturway'></a>
+<a href='p/168.jpg' data-d='2022-11-27' data-r='3'><img src='m/168.jpg' title='digi,gimp,mono,study,female,gesture,naturway'></a>
+<a href='p/167.jpg' data-d='2022-11-26' data-r='3'><img src='m/167.jpg' title='digi,gimp,mono,study,male,gesture,naturway'></a>
+<a href='p/166.jpg' data-d='2022-11-24' data-r='3'><img src='m/166.jpg' title='digi,gimp,mono,study,female,gesture,naturway'></a>
+<a href='p/165.jpg' data-d='2022-11-23' data-r='4'><img src='m/165.jpg' title='digi,gimp,mono,study,male,female,gesture,head,naturway'></a>
+<a href='p/164.jpg' data-d='2022-11-22' data-r='4'><img src='m/164.jpg' title='digi,gimp,mono,study,female,nude,gesture,house,naturway,male'></a>
+<a href='p/163.jpg' data-d='2022-11-21' data-r='3'><img src='m/163.jpg' title='digi,gimp,mono,study,female,male,gesture,nude,naturway'></a>
+<a href='p/161.jpg' data-d='2022-11-19' data-r='3'><img src='m/161.jpg' title='digi,gimp,mono,study,male,gesture,naturway'></a>
+<a href='p/162.jpg' data-d='2022-11-19' data-r='3'><img src='m/162.jpg' title='digi,gimp,mono,study,female,nude,gesture,naturway'></a>
+<a href='p/159.jpg' data-d='2022-11-17' data-r='3'><img src='m/159.jpg' title='digi,rebelle,color,study,drapery,female,gesture,naturway'></a>
+<a href='p/160.jpg' data-d='2022-11-17' data-r='3'><img src='m/160.jpg' title='digi,rebelle,mono,study,head,female,gesture,naturway'></a>
+<a href='p/158.jpg' data-d='2022-11-15' data-r='3'><img src='m/158.jpg' title='digi,rebelle,color,study,drapery,female,gesture,naturway'></a>
+<a href='p/157.jpg' data-d='2022-11-14' data-r='3'><img src='m/157.jpg' title='digi,gimp,mono,study,drapery,female,gesture,naturway'></a>
+<a href='p/156.jpg' data-d='2022-11-13' data-r='4'><img src='m/156.jpg' title='digi,gimp,mono,study,drapery,female,naturway'></a>
+<a href='p/155.jpg' data-d='2022-11-12' data-r='4'><img src='m/155.jpg' title='digi,gimp,mono,study,drapery,female,naturway'></a>
+<a href='p/154.jpg' data-d='2022-11-11' data-r='4'><img src='m/154.jpg' title='digi,gimp,mono,study,drapery,female,naturway'></a>
+<a href='p/153.jpg' data-d='2022-11-10' data-r='3'><img src='m/153.jpg' title='digi,gimp,mono,study,drapery,naturway'></a>
+<a href='p/152.jpg' data-d='2022-11-09' data-r='3'><img src='m/152.jpg' title='digi,gimp,mono,study,drapery,naturway'></a>
+<a href='p/151.jpg' data-d='2022-11-08' data-r='3'><img src='m/151.jpg' title='digi,gimp,mono,study,drapery,male,naturway'></a>
+<a href='p/150.jpg' data-d='2022-11-07' data-r='3'><img src='m/150.jpg' title='digi,rebelle,color,art,male,head,gesture'></a>
+<a href='p/149.jpg' data-d='2022-11-06' data-r='3'><img src='m/149.jpg' title='digi,rebelle,color,study,female,male,gesture,nude,naturway'></a>
+<a href='p/148.jpg' data-d='2022-11-05' data-r='3'><img src='m/148.jpg' title='digi,rebelle,color,study,female,nude,gesture,male,naturway'></a>
+<a href='p/147.jpg' data-d='2022-11-03' data-r='3'><img src='m/147.jpg' title='digi,rebelle,color,study,female,male,gesture,nude,naturway'></a>
+<a href='p/145.jpg' data-d='2022-11-01' data-r='4'><img src='m/145.jpg' title='digi,rebelle,color,study,female,male,gesture,head,naturway'></a>
+<a href='p/146.jpg' data-d='2022-11-01' data-r='3'><img src='m/146.jpg' title='digi,rebelle,color,study,female,gesture,naturway'></a>
+<a href='p/144.jpg' data-d='2022-10-30' data-r='4'><img src='m/144.jpg' title='digi,rebelle,color,study,female,nude,gesture,naturway'></a>
+<a href='p/142.jpg' data-d='2022-10-29' data-r='3'><img src='m/142.jpg' title='digi,rebelle,color,study,male,female,gesture,naturway'></a>
+<a href='p/143.jpg' data-d='2022-10-29' data-r='3'><img src='m/143.jpg' title='digi,rebelle,color,study,male,female,gesture,naturway'></a>
+<a href='p/141.jpg' data-d='2022-10-28' data-r='2'><img src='m/141.jpg' title='digi,rebelle,color,study,male,gesture,naturway'></a>
+<a href='p/140.jpg' data-d='2022-10-27' data-r='5'><img src='m/140.jpg' title='digi,rebelle,color,study,female,head'></a>
+<a href='p/139.jpg' data-d='2022-10-25' data-r='4'><img src='m/139.jpg' title='digi,gimp,mono,study,gesture,male,female,head,naturway'></a>
+<a href='p/138.jpg' data-d='2022-10-23' data-r='3'><img src='m/138.jpg' title='digi,gimp,mono,study,gesture,male,female,body,naturway'></a>
+<a href='p/137.jpg' data-d='2022-10-22' data-r='3'><img src='m/137.jpg' title='digi,gimp,mono,study,gesture,male,body,naturway'></a>
+<a href='p/136.jpg' data-d='2022-10-20' data-r='3'><img src='m/136.jpg' title='digi,gimp,mono,study,gesture,female,body,naturway'></a>
+<a href='p/135.jpg' data-d='2022-10-19' data-r='3'><img src='m/135.jpg' title='digi,gimp,mono,study,gesture,male,female,naturway'></a>
+<a href='p/134.jpg' data-d='2022-10-17' data-r='5'><img src='m/134.jpg' title='digi,gimp,mono,study,gesture,male,head,naturway'></a>
+<a href='p/133.jpg' data-d='2022-10-16' data-r='4'><img src='m/133.jpg' title='digi,gimp,mono,study,gesture,female,nude,body,naturway'></a>
+<a href='p/132.jpg' data-d='2022-10-15' data-r='5'><img src='m/132.jpg' title='digi,gimp,mono,study,gesture,female,nude,body,naturway'></a>
+<a href='p/131.jpg' data-d='2022-10-13' data-r='4'><img src='m/131.jpg' title='digi,gimp,mono,study,gesture,female,nude,male,naturway,body'></a>
+<a href='p/130.jpg' data-d='2022-10-11' data-r='2'><img src='m/130.jpg' title='digi,gimp,mono,study,gesture,female,naturway'></a>
+<a href='p/129.jpg' data-d='2022-10-10' data-r='5'><img src='m/129.jpg' title='digi,gimp,color,study,gesture,female,nude,naturway'></a>
+<a href='p/128.jpg' data-d='2022-10-09' data-r='3'><img src='m/128.jpg' title='digi,gimp,color,study,gesture,head,female,male,naturway'></a>
+<a href='p/127.jpg' data-d='2022-10-08' data-r='3'><img src='m/127.jpg' title='digi,gimp,mono,study,gesture,head,male,female,naturway'></a>
+<a href='p/126.jpg' data-d='2022-10-06' data-r='2'><img src='m/126.jpg' title='digi,gimp,outline,study,gesture,female,naturway'></a>
+<a href='p/125.jpg' data-d='2022-10-05' data-r='2'><img src='m/125.jpg' title='digi,gimp,outline,study,gesture,female,naturway'></a>
+<a href='p/124.jpg' data-d='2022-10-04' data-r='3'><img src='m/124.jpg' title='digi,gimp,color,study,gesture,female,doodle,naturway'></a>
+<a href='p/123.jpg' data-d='2022-10-03' data-r='4'><img src='m/123.jpg' title='digi,gimp,color,study,gesture,female,naturway'></a>
+<a href='p/122.jpg' data-d='2022-10-02' data-r='2'><img src='m/122.jpg' title='digi,gimp,color,study,gesture,female,naturway'></a>
+<a href='p/121.jpg' data-d='2022-10-01' data-r='3'><img src='m/121.jpg' title='digi,gimp,color,study,gesture,male,naturway'></a>
+<a href='p/120.jpg' data-d='2022-09-29' data-r='2'><img src='m/120.jpg' title='digi,gimp,color,study,female,gesture,naturway'></a>
+<a href='p/119.jpg' data-d='2022-09-28' data-r='3'><img src='m/119.jpg' title='digi,gimp,mono,study,female,gesture,naturway'></a>
+<a href='p/118.jpg' data-d='2022-09-27' data-r='3'><img src='m/118.jpg' title='digi,gimp,mono,study,female,nude,gesture,naturway'></a>
+<a href='p/117.jpg' data-d='2022-09-26' data-r='6'><img src='m/117.jpg' title='digi,gimp,mono,art,male,object'></a>
+<a href='p/116.jpg' data-d='2022-09-25' data-r='2'><img src='m/116.jpg' title='digi,gimp,mono,study,gesture,female,naturway'></a>
+<a href='p/115.jpg' data-d='2022-09-23' data-r='2'><img src='m/115.jpg' title='digi,gimp,mono,study,gesture,male,naturway'></a>
+<a href='p/114.jpg' data-d='2022-09-22' data-r='2'><img src='m/114.jpg' title='digi,gimp,mono,study,gesture,female,naturway'></a>
+<a href='p/113.jpg' data-d='2022-09-21' data-r='2'><img src='m/113.jpg' title='digi,gimp,mono,study,gesture,female,naturway'></a>
+<a href='p/112.jpg' data-d='2022-09-20' data-r='2'><img src='m/112.jpg' title='digi,gimp,mono,study,gesture,female,nude,naturway'></a>
+<a href='p/111.jpg' data-d='2022-09-19' data-r='2'><img src='m/111.jpg' title='digi,gimp,mono,study,gesture,male,nude,naturway'></a>
+<a href='p/110.jpg' data-d='2022-09-18' data-r='2'><img src='m/110.jpg' title='digi,gimp,mono,study,gesture,female,male,nude,naturway'></a>
+<a href='p/109.jpg' data-d='2022-09-17' data-r='1'><img src='m/109.jpg' title='digi,gimp,mono,study,gesture,female,male,naturway'></a>
+<a href='p/108.jpg' data-d='2022-09-16' data-r='2'><img src='m/108.jpg' title='digi,gimp,mono,study,gesture,female,naturway'></a>
+<a href='p/107.jpg' data-d='2022-09-15' data-r='3'><img src='m/107.jpg' title='digi,gimp,mono,study,gesture,animal,male,female,naturway'></a>
+<a href='p/106.jpg' data-d='2022-09-14' data-r='2'><img src='m/106.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/105.jpg' data-d='2022-09-13' data-r='2'><img src='m/105.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/104.jpg' data-d='2022-09-12' data-r='2'><img src='m/104.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/103.jpg' data-d='2022-09-11' data-r='2'><img src='m/103.jpg' title='digi,gimp,outline,study,gesture,object,naturway'></a>
+<a href='p/102.jpg' data-d='2022-09-10' data-r='2'><img src='m/102.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/101.jpg' data-d='2022-09-09' data-r='2'><img src='m/101.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/100.jpg' data-d='2022-09-08' data-r='2'><img src='m/100.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/99.jpg' data-d='2022-09-07' data-r='2'><img src='m/99.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/98.jpg' data-d='2022-09-06' data-r='2'><img src='m/98.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/97.jpg' data-d='2022-09-05' data-r='2'><img src='m/97.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/96.jpg' data-d='2022-09-04' data-r='2'><img src='m/96.jpg' title='digi,gimp,outline,study,gesture,naturway'></a>
+<a href='p/95.jpg' data-d='2022-09-02' data-r='2'><img src='m/95.jpg' title='digi,gimp,outline,study,gesture,body,naturway'></a>
+<a href='p/94.jpg' data-d='2022-09-01' data-r='3'><img src='m/94.jpg' title='digi,gimp,mono,study,male,female,nude,naturway'></a>
+<a href='p/93.jpg' data-d='2022-08-30' data-r='4'><img src='m/93.jpg' title='digi,gimp,mono,study,male,head,body,rightbrain'></a>
+<a href='p/92.jpg' data-d='2022-08-29' data-r='3'><img src='m/92.jpg' title='digi,gimp,mono,study,male,animal,object,rightbrain'></a>
+<a href='p/91.jpg' data-d='2022-08-28' data-r='4'><img src='m/91.jpg' title='digi,gimp,mono,study,male,head,master,rightbrain'></a>
+<a href='p/90.jpg' data-d='2022-08-26' data-r='6'><img src='m/90.jpg' title='digi,gimp,mono,study,male,head,master,rightbrain'></a>
+<a href='p/89.jpg' data-d='2022-08-25' data-r='4'><img src='m/89.jpg' title='digi,gimp,mono,study,male,female,head,master,rightbrain'></a>
+<a href='p/88.jpg' data-d='2022-08-24' data-r='5'><img src='m/88.jpg' title='digi,gimp,mono,study,male,head,master,rightbrain'></a>
+<a href='p/87.jpg' data-d='2022-08-23' data-r='3'><img src='m/87.jpg' title='digi,gimp,mono,study,house,rightbrain'></a>
+<a href='p/86.jpg' data-d='2022-08-21' data-r='4'><img src='m/86.jpg' title='digi,gimp,mono,study,female,male,master,rightbrain'></a>
+<a href='p/85.jpg' data-d='2022-08-20' data-r='3'><img src='m/85.jpg' title='digi,gimp,outline,study,female,male,nude,rightbrain'></a>
+<a href='p/84.jpg' data-d='2022-08-18' data-r='6'><img src='m/84.jpg' title='digi,gimp,mono,study,female,machine,animal,master,rightbrain'></a>
+<a href='p/83.jpg' data-d='2022-08-17' data-r='4'><img src='m/83.jpg' title='digi,gimp,outline,study,male,animal,rightbrain'></a>
+<a href='p/82.jpg' data-d='2022-08-16' data-r='3'><img src='m/82.jpg' title='digi,gimp,mono,study,head,male,object,rightbrain'></a>
+<a href='p/81.jpg' data-d='2022-08-15' data-r='3'><img src='m/81.jpg' title='digi,gimp,mono,study,head,female,male,rightbrain'></a>
+<a href='p/80.jpg' data-d='2022-08-13' data-r='5'><img src='m/80.jpg' title='digi,gimp,mono,study,body,female,rightbrain'></a>
+<a href='p/79.jpg' data-d='2022-08-10' data-r='3'><img src='m/79.jpg' title='digi,gimp,mono,study,animal,male,doodle,keysdraw'></a>
+<a href='p/78.jpg' data-d='2022-08-09' data-r='4'><img src='m/78.jpg' title='digi,gimp,mono,study,male,animal,keysdraw'></a>
+<a href='p/77.jpg' data-d='2022-08-08' data-r='3'><img src='m/77.jpg' title='digi,gimp,mono,study,male,nature,doodle,keysdraw'></a>
+<a href='p/76.jpg' data-d='2022-08-07' data-r='3'><img src='m/76.jpg' title='digi,gimp,outline,study,male,object,doodle,keysdraw'></a>
+<a href='p/75.jpg' data-d='2022-08-05' data-r='4'><img src='m/75.jpg' title='digi,gimp,mono,study,male,animal,keysdraw'></a>
+<a href='p/74.jpg' data-d='2022-08-04' data-r='3'><img src='m/74.jpg' title='digi,gimp,mono,study,male,object,doodle,keysdraw'></a>
+<a href='p/73.jpg' data-d='2022-08-02' data-r='3'><img src='m/73.jpg' title='digi,gimp,mono,study,female,object,keysdraw'></a>
+<a href='p/72.jpg' data-d='2022-08-01' data-r='3'><img src='m/72.jpg' title='digi,gimp,mono,study,object,keysdraw'></a>
+<a href='p/71.jpg' data-d='2022-07-31' data-r='3'><img src='m/71.jpg' title='digi,gimp,mono,study,object,female,keysdraw'></a>
+<a href='p/70.jpg' data-d='2022-07-30' data-r='3'><img src='m/70.jpg' title='digi,gimp,mono,study,object,keysdraw'></a>
+<a href='p/69.jpg' data-d='2022-07-29' data-r='5'><img src='m/69.jpg' title='digi,gimp,mono,study,male,house,master,keysdraw'></a>
+<a href='p/68.jpg' data-d='2022-07-27' data-r='3'><img src='m/68.jpg' title='digi,gimp,mono,study,animal,house,keysdraw'></a>
+<a href='p/67.jpg' data-d='2022-07-26' data-r='3'><img src='m/67.jpg' title='digi,gimp,mono,study,male,female,object,keysdraw'></a>
+<a href='p/66.jpg' data-d='2022-07-24' data-r='4'><img src='m/66.jpg' title='digi,gimp,mono,study,object,nature,keysdraw'></a>
+<a href='p/65.jpg' data-d='2022-07-23' data-r='3'><img src='m/65.jpg' title='digi,gimp,mono,study,nature,object,keysdraw'></a>
+<a href='p/64.jpg' data-d='2022-07-22' data-r='3'><img src='m/64.jpg' title='digi,gimp,mono,study,house,nature,keysdraw'></a>
+<a href='p/63.jpg' data-d='2022-07-19' data-r='5'><img src='m/63.jpg' title='digi,gimp,mono,study,object,keysdraw'></a>
+<a href='p/62.jpg' data-d='2022-07-18' data-r='3'><img src='m/62.jpg' title='digi,gimp,mono,study,drapery,object,keysdraw'></a>
+<a href='p/61.jpg' data-d='2022-07-17' data-r='3'><img src='m/61.jpg' title='digi,gimp,mono,study,nature,keysdraw'></a>
+<a href='p/60.jpg' data-d='2022-07-16' data-r='5'><img src='m/60.jpg' title='digi,gimp,mono,study,male,female,animal,head,keysdraw'></a>
+<a href='p/59.jpg' data-d='2022-07-15' data-r='2'><img src='m/59.jpg' title='digi,gimp,mono,study,house,keysdraw'></a>
+<a href='p/58.jpg' data-d='2022-07-14' data-r='2'><img src='m/58.jpg' title='digi,gimp,mono,study,animal,object,keysdraw'></a>
+<a href='p/57.jpg' data-d='2022-07-13' data-r='4'><img src='m/57.jpg' title='digi,gimp,mono,study,animal,object,keysdraw'></a>
+<a href='p/56.jpg' data-d='2022-07-12' data-r='5'><img src='m/56.jpg' title='digi,gimp,mono,study,object,master,keysdraw'></a>
+<a href='p/55.jpg' data-d='2022-07-10' data-r='4'><img src='m/55.jpg' title='digi,gimp,mono,study,object,keysdraw'></a>
+<a href='p/54.jpg' data-d='2022-07-08' data-r='4'><img src='m/54.jpg' title='digi,gimp,outline,study,house,keysdraw'></a>
+<a href='p/53.jpg' data-d='2022-07-07' data-r='3'><img src='m/53.jpg' title='digi,gimp,outline,study,house,keysdraw'></a>
+<a href='p/52.jpg' data-d='2022-07-06' data-r='5'><img src='m/52.jpg' title='digi,gimp,mono,study,house,keysdraw'></a>
+<a href='p/51.jpg' data-d='2022-07-05' data-r='3'><img src='m/51.jpg' title='digi,gimp,outline,study,house,female,keysdraw'></a>
+<a href='p/50.jpg' data-d='2022-07-04' data-r='4'><img src='m/50.jpg' title='digi,gimp,mono,study,object,keysdraw'></a>
+<a href='p/49.jpg' data-d='2022-07-02' data-r='3'><img src='m/49.jpg' title='digi,gimp,mono,study,house,keysdraw'></a>
+<a href='p/48.jpg' data-d='2022-06-30' data-r='5'><img src='m/48.jpg' title='digi,gimp,mono,study,object,keysdraw'></a>
+<a href='p/47.jpg' data-d='2022-06-29' data-r='4'><img src='m/47.jpg' title='digi,gimp,mono,study,male,head,keysdraw'></a>
+<a href='p/46.jpg' data-d='2022-06-28' data-r='3'><img src='m/46.jpg' title='digi,gimp,mono,study,male,female,head,keysdraw'></a>
+<a href='p/45.jpg' data-d='2022-06-27' data-r='2'><img src='m/45.jpg' title='digi,gimp,mono,study,nature,keysdraw'></a>
+<a href='p/44.jpg' data-d='2022-06-26' data-r='3'><img src='m/44.jpg' title='digi,gimp,mono,study,male,animal,keysdraw'></a>
+<a href='p/43.jpg' data-d='2022-06-24' data-r='5'><img src='m/43.jpg' title='digi,gimp,mono,study,male,object,keysdraw'></a>
+<a href='p/42.jpg' data-d='2022-06-22' data-r='5'><img src='m/42.jpg' title='digi,gimp,mono,study,nature,house,keysdraw'></a>
+<a href='p/41.jpg' data-d='2022-06-20' data-r='3'><img src='m/41.jpg' title='digi,gimp,mono,study,female,object,keysdraw'></a>
+<a href='p/40.jpg' data-d='2022-06-19' data-r='5'><img src='m/40.jpg' title='digi,gimp,mono,study,male,head,keysdraw'></a>
+<a href='p/39.jpg' data-d='2022-06-18' data-r='4'><img src='m/39.jpg' title='digi,gimp,mono,study,male,female,object,keysdraw'></a>
+<a href='p/38.jpg' data-d='2022-06-15' data-r='3'><img src='m/38.jpg' title='digi,gimp,mono,study,male,keysdraw'></a>
+<a href='p/37.jpg' data-d='2022-06-14' data-r='4'><img src='m/37.jpg' title='digi,gimp,mono,study,female,male,keysdraw'></a>
+<a href='p/36.jpg' data-d='2022-06-13' data-r='4'><img src='m/36.jpg' title='digi,gimp,mono,study,male,head,keysdraw'></a>
+<a href='p/35.jpg' data-d='2022-06-12' data-r='5'><img src='m/35.jpg' title='digi,gimp,mono,study,female,head,keysdraw'></a>
+<a href='p/34.jpg' data-d='2022-06-11' data-r='4'><img src='m/34.jpg' title='digi,gimp,mono,study,male,female,head,animal,keysdraw'></a>
+<a href='p/33.jpg' data-d='2022-06-10' data-r='4'><img src='m/33.jpg' title='digi,gimp,mono,study,male,female,head,keysdraw'></a>
+<a href='p/32.jpg' data-d='2022-06-09' data-r='3'><img src='m/32.jpg' title='digi,gimp,mono,study,male,female,keysdraw'></a>
+<a href='p/31.jpg' data-d='2022-06-08' data-r='3'><img src='m/31.jpg' title='digi,gimp,mono,study,male,nude,keysdraw'></a>
+<a href='p/30.jpg' data-d='2022-06-07' data-r='3'><img src='m/30.jpg' title='digi,gimp,mono,study,female,male,keysdraw'></a>
+<a href='p/29.jpg' data-d='2022-06-06' data-r='4'><img src='m/29.jpg' title='digi,gimp,color,study,male,female,keysdraw'></a>
+<a href='p/28.jpg' data-d='2022-06-05' data-r='3'><img src='m/28.jpg' title='digi,gimp,outline,study,doodle,male,female,keysdraw'></a>
+<a href='p/27.jpg' data-d='2022-06-03' data-r='3'><img src='m/27.jpg' title='digi,gimp,color,study,doodle,nature,male,keysdraw'></a>
+<a href='p/26.jpg' data-d='2022-06-01' data-r='4'><img src='m/26.jpg' title='digi,gimp,mono,study,head,female,keysdraw'></a>
+<a href='p/25.jpg' data-d='2022-05-31' data-r='3'><img src='m/25.jpg' title='digi,gimp,outline,study,gesture,keysdraw'></a>
+<a href='p/24.jpg' data-d='2022-05-30' data-r='4'><img src='m/24.jpg' title='digi,gimp,mono,study,animal,head,female,master,keysdraw'></a>
+<a href='p/23.jpg' data-d='2022-05-28' data-r='5'><img src='m/23.jpg' title='digi,gimp,mono,study,female,object,master,keysdraw'></a>
+<a href='p/22.jpg' data-d='2022-05-25' data-r='3'><img src='m/22.jpg' title='digi,gimp,outline,study,female,nature,master,keysdraw'></a>
+<a href='p/21.jpg' data-d='2022-05-24' data-r='3'><img src='m/21.jpg' title='digi,gimp,outline,study,animal,male,master,keysdraw'></a>
+<a href='p/20.jpg' data-d='2022-05-23' data-r='3'><img src='m/20.jpg' title='digi,gimp,mono,study,machine,male,keysdraw'></a>
+<a href='p/19.jpg' data-d='2022-05-22' data-r='3'><img src='m/19.jpg' title='digi,gimp,mono,study,object,male,keysdraw'></a>
+<a href='p/18.jpg' data-d='2022-05-21' data-r='3'><img src='m/18.jpg' title='digi,gimp,mono,study,male,animal,keysdraw'></a>
+<a href='p/17.jpg' data-d='2022-05-20' data-r='3'><img src='m/17.jpg' title='digi,gimp,mono,study,object,animal,keysdraw'></a>
+<a href='p/16.jpg' data-d='2022-05-18' data-r='5'><img src='m/16.jpg' title='digi,gimp,mono,study,head,male,female,keysdraw'></a>
+<a href='p/15.jpg' data-d='2022-05-17' data-r='3'><img src='m/15.jpg' title='digi,gimp,outline,color,body,animal,object,study,keysdraw'></a>
+<a href='p/13.jpg' data-d='2022-05-15' data-r='3'><img src='m/13.jpg' title='digi,gimp,outline,study,male,body,keysdraw'></a>
+<a href='p/14.jpg' data-d='2022-05-15' data-r='3'><img src='m/14.jpg' title='digi,gimp,outline,study,male,body,doodle,keysdraw'></a>
+<a href='p/12.jpg' data-d='2022-05-14' data-r='3'><img src='m/12.jpg' title='digi,gimp,outline,study,male,animal,doodle,keysdraw'></a>
+<a href='p/11.jpg' data-d='2022-05-13' data-r='3'><img src='m/11.jpg' title='digi,gimp,outline,study,male,female,object,keysdraw'></a>
+<a href='p/10.jpg' data-d='2022-05-12' data-r='2'><img src='m/10.jpg' title='digi,gimp,outline,study,male,female,animal'></a>
+<a href='p/8.jpg' data-d='2022-05-10' data-r='3'><img src='m/8.jpg' title='digi,gimp,outline,study,male,female,nude'></a>
+<a href='p/9.jpg' data-d='2022-05-10' data-r='3'><img src='m/9.jpg' title='digi,gimp,outline,study,male,female,nude'></a>
+<a href='p/7.jpg' data-d='2022-05-09' data-r='3'><img src='m/7.jpg' title='digi,gimp,outline,study,male,female'></a>
+<a href='p/6.jpg' data-d='2022-05-08' data-r='2'><img src='m/6.jpg' title='digi,gimp,outline,study,animal,female,house'></a>
+<a href='p/5.jpg' data-d='2022-05-07' data-r='3'><img src='m/5.jpg' title='digi,gimp,outline,study,animal,female'></a>
+<a href='p/4.jpg' data-d='2022-05-06' data-r='2'><img src='m/4.jpg' title='digi,gimp,outline,doodle,animal,female'></a>
+<a href='p/2.JPG' data-d='2022-05-05' data-r='0'><img src='m/2.JPG' title='digi,gimp,outline,machine,doodle'></a>
+<a href='p/3.jpg' data-d='2022-05-05' data-r='0'><img src='m/3.jpg' title='digi,gimp,color,doodle'></a>
+<a href='p/001.jpg' data-d='2013-05-06' data-r='1'><img src='m/001.jpg' title='digi,iPad,color,animal,doodle'></a>
+<a href='p/000.jpg' data-d='2000-01-01' data-r='1'><img src='m/000.jpg' title='trad,gouache,color,art,machine,nature'></a>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+</article>
+<footer>
+	<hr>
+	<p>If you want to repost my stuff, please credit me. If you want to make money off it you must first ask me for permission.</p>
+	<p><b>The end.</b></p>
+</footer>
 </body>
 </html>

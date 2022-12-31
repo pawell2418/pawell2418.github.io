@@ -1,0 +1,109 @@
+body {
+  background-color: #848484;
+  padding: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  min-width: 315px;
+}
+a:link {
+  color: #01008b;
+}
+a:visited {
+  color: #01004c;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: blue;
+}
+nav a img {
+	float: left;
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+nav a {
+	float: left;
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 50px;
+	height: 60px;
+}
+nav a:nth-child(even){
+	background-color: #939393;
+}
+#gallery a {
+	position: relative;
+	padding: 5px;
+	float: left;
+	display: block;
+	width: 128px;
+	height: 72px;
+}
+#gallery a img {
+	max-width:128px;
+	max-height:72px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+hr {
+	padding: 5px;
+	margin-left: 0px;
+	width: 80%;
+	clear: left;
+	border: none;
+	border-bottom: 4px dashed;
+	overflow: hidden;
+	color: #2a2a2a;
+}
+.filterOption {
+	display:block;
+	float: left;
+	height: 25px;
+	padding: 1px;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+.filterOption:nth-child(even){
+	background-color: #b3b3b3;
+}
+.inputNum {
+	width: 30px;
+}
+h1.background {
+	color: #717171;
+	margin: 0px;
+	padding: 0px;
+	font-size: 8px;
+
+}
+#filterOptionTags {
+	clear: left;
+}
+#filterOptionTags div {
+	float:left;
+	padding: 1px;
+	margin: 2px;
+	cursor: pointer;
+	min-width: 90px;
+	font-family: "Helvetica Narrow","Arial Narrow",Helvetica,sans-serif;
+}
+#filterOptionTags div:nth-child(even){
+	background-color: #b3b3b3;
+}
+#filterOptionTags div.normaltag {
+	
+}
+#filterOptionTags div.negativetag {
+	color: red;
+}
+#filterOptionTags div.zerotag {
+	color: #8a8a8a;
+	cursor: text;
+}
