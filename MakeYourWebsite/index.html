@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anon: Gallery</title>
+	<meta name="description" content="Anon_Gallery">
+	<meta name="author" content="Anon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="filter.js" defer type="text/javascript"></script>
+</head>
+<body>
+<header>
+	<nav>
+		<a href="https://github.io">
+			<img src="logo.png" title="Anon logo">Anon
+		</a>
+		<a href="link.html" title="Frequently asked questions">Link</a>
+		<a href="https://twitter.com/" title="Anon on twitter">Twitter</a>
+		<a href="https://www.deviantart.com/" title="Anon on DevianArt">DeviantArt</a>
+	</nav>
+	<hr>
+</header>
+<form id="filter">
+	<div class="filterOption">
+		<label for="Ratemin">Rating</label>
+		<input type="number" min="0" max="10" value="0" name="ratemin" id="Ratemin" class="inputNum">
+		<label for="Ratemax">~</label>
+		<input type="number" min="0" max="10" value="10" name="ratemax" id="Ratemax" class="inputNum">
+	</div>
+	<div class="filterOption">
+		<input type="date" name="datefr" id="Datefr" min="2000-01-01">
+		<label for="Datefr">Date</label>
+		<input type="date" name="dateto" id="Dateto" min="2000-01-01">
+	</div>
+	<div class="filterOption">
+		<input type="radio" id="sortdat" name="sort" value="dat" checked="checked">
+		<label for="sortdat">Sort by Date</label>
+		<input type="radio" id="sortrat" name="sort" value="rat">
+		<label for="sortrat">Sort by Rating</label>
+	</div>
+	<div class="filterOption">
+		<label for="Tags">Tags</label><input type="text" name="tags" id="Tags" readonly>
+	</div>
+	<div class="filterOption">
+		<input type="submit" value="Filter" id="SubmitButton">
+		<input type="reset" value="Reset" id="Reset">
+	</div>
+	<div id="filterOptionTags">
+	</div>
+</form>
+<hr>
+<article id="gallery">
+	<h1 class="background">Gallery</h1>
+	<!--HERE-->
