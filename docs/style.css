@@ -55,7 +55,7 @@ nav a:nth-child(even){
 hr {
 	padding: 5px;
 	margin-left: 0px;
-	width: 80%;
+	width: 850px;
 	clear: left;
 	border: none;
 	border-bottom: 4px dashed;
@@ -77,11 +77,9 @@ hr {
 	width: 30px;
 }
 h1.background {
-	color: #717171;
 	margin: 0px;
 	padding: 0px;
 	font-size: 8px;
-
 }
 #filterOptionTags {
 	clear: left;
@@ -106,4 +104,46 @@ h1.background {
 #filterOptionTags div.zerotag {
 	color: #8a8a8a;
 	cursor: text;
+}
+article p {
+	text-align: justify;
+	font-size: 1.2em;
+	max-width: 600px;
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+article h1 {
+	font-size: 2em;
+	color: white;
+	margin-left: 0.7em;
+	margin-bottom: 0px;
+}
+article h2 {
+	margin-bottom: 0em;
+	margin-top: 1.8em;
+	margin-left: 0.7em;
+}
+article div.left {
+	float: left;
+}
+article p.clearleft {
+	clear: left;
+}
+article ul {
+	margin-top: 0px;
+}
+article strong {
+	color: white;
+}
+ul.book li {
+	max-width: 600px;
+	text-align: justify;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+div.left img {
+	margin-left: 1.5em;
+}
+ul.book {
+	margin-bottom: 3em;
 }
