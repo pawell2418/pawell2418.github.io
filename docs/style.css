@@ -144,6 +144,9 @@ ul.book li {
 div.left img {
 	margin-left: 1.5em;
 }
+div.left li img {
+	margin-left: 0;
+}
 ul.book {
 	margin-bottom: 3em;
 }
