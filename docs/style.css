@@ -120,7 +120,7 @@ article h1 {
 }
 article h2 {
 	margin-bottom: 0em;
-	margin-top: 1.8em;
+	margin-top: 1.2em;
 	margin-left: 0.7em;
 }
 article div.left {
@@ -135,7 +135,7 @@ article ul {
 article strong {
 	color: white;
 }
-ul.book li {
+.rating ul li {
 	max-width: 600px;
 	text-align: justify;
 	font-size: 1.2em;
@@ -149,4 +149,24 @@ div.left li img {
 }
 ul.book {
 	margin-bottom: 3em;
+}
+div.clearleft {
+	clear: left;
+}
+.book {
+	clear:left;
+	margin-left: 1.5em;
+}
+.cover {
+	float: left;
+	width: 260px;
+	margin-bottom: 50px;
+}
+.cover img {
+	max-height: 300px;
+	
+}
+.rating {
+	float: left;
+	margin-bottom: 30px;
 }
