@@ -172,5 +172,32 @@ div.clearleft {
 }
 .cover i {
 	font-size: 7px;
-	color: #5c5c5c
+	color: #5c5c5c;
+}
+#bookpile .bok {
+	float: left;
+	width: 192px;
+	height: 340px;
+	margin: 5px;
+}
+#bookpile .bok  img{
+	max-width: 192px;
+	max-height: 256px;
+}
+#bookpile .bok  a{
+	display: block;
+	width: 192px;
+	height: 256px;
+}
+#bookpile .bok i{
+	display: block;
+	font-family: "Helvetica Narrow", "Arial Narrow", Arial, sans-serif;
+	font-stretch: condensed;
+	font-size: 14px;
+}
+#bookpile .bok b{
+	display: block;
+	font-family: "Helvetica Narrow", "Arial Narrow", Arial, sans-serif;
+	font-stretch: condensed;
+	font-size: 14px;
 }
