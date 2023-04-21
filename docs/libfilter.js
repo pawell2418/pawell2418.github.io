@@ -119,9 +119,12 @@ for(i = 0; i < tagsClick.length; i++) {
 	});
 }
 
-inputSearch.addEventListener('change', function(){
+inputSearch.addEventListener('input', function(){
 	filterPictures();
 });
+inputSearch.addEventListener('change', function(){
+	filterPictures();
+})
 inputSortTitle.addEventListener('change', function(){
 	filterPictures();
 });
@@ -149,7 +152,7 @@ inputButFilter.addEventListener('click', function(e){
 	if (inputSortAuthor.checked == true)  curedParam = curedParam + "sort=" + inputSortAuthor.value + "&";
 	// inputTags selected by default
 	if (check(inputTags.value) != null) curedParam = curedParam + "tags=" + inputTags.value + "&";
-	if (check(inputSearch.value) != null) curedParam = curedParam + "search=" + inputSearch.value + "&";
+	if (check(inputSearch.value) != null) curedParam = curedParam + "search=" + inputSearch.value.trim() + "&";
 
 	if (curedParam.length > 0) {
 		window.location.href = baseURL + "?" + curedParam.substring(0, curedParam.length - 1);
@@ -171,6 +174,9 @@ function show(id) {
 function check(value) {
 	if (value == null) return null;
 	if (value.length < 1) return null;
+	if (typeof value === 'string' || value instanceof String) {
+		if (value.trim() < 1 ) return null;
+	} 
 	return value;
 }
 var beggining = document.getElementById("bookpile");
@@ -243,7 +249,7 @@ function filterPictures() {
 		if (hasTags == false) continue;
 		
 		if (check(inputSearch.value) != null) {
-			var stext = inputSearch.value.toLowerCase();
+			var stext = inputSearch.value.toLowerCase().trim();
 			
 			if (pic.author.includes(stext)) {
 				//ok
