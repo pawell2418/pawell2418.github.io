@@ -173,6 +173,7 @@ div.clearleft {
 .cover i {
 	font-size: 7px;
 	color: #5c5c5c;
+	white-space: nowrap;
 }
 #bookpile .bok {
 	float: left;
