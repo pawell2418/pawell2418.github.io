@@ -32,7 +32,7 @@ var filterdiv = document.getElementById("filterOptionTags");
 var tagsClick = [];
 var tempAllTags = Object.entries(AllTags);
 tempAllTags.sort(function(b, a) {
-	return (a[1] - b[1]);
+	return (b[0].localeCompare(a[0]));
 });
 for (var i = 0; i < tempAllTags.length; i++) {
 	var tagg = tempAllTags[i];
