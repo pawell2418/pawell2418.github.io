@@ -202,3 +202,27 @@ div.clearleft {
 	font-stretch: condensed;
 	font-size: 14px;
 }
+.tool {
+	clear:left;
+}
+.tool .pic {
+	display:block;
+	float: left;
+}
+.tool .desc {
+	float: left;
+	display: block;
+}
+.tool .pic img {
+		margin-left: 20px;
+		margin-right: 5px;
+		max-width: 192px;
+		max-height: 256px;
+}
+.tool .desc p {
+	text-align: justify;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
