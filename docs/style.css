@@ -226,3 +226,8 @@ div.clearleft {
     margin-left: 1em;
     margin-top: 0.5em;
 }
+.tool .desc.canceled {
+	background-image: url("tool/canceled.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
