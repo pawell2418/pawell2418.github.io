@@ -250,6 +250,16 @@ ul#crits li a{
 	display:block;
 	float:left;
 }
+ul#crits li.year{
+	width: 100%;
+	text-align: right;
+	padding: 10px;
+	margin-bottom: 20px;
+	display:block;
+	float:left;
+	font-size: 30px;
+	font-weight: bold;
+}
 ul#crits li:nth-child(odd) a{
 	background-color: #b3b3b3;
 }
