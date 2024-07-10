@@ -123,6 +123,9 @@ article h2 {
 	margin-top: 1.2em;
 	margin-left: 0.7em;
 }
+article h3 {
+	margin-left: 2em;
+}
 article div.left {
 	float: left;
 }
@@ -316,4 +319,11 @@ div.project div.desc{
 }
 div.project div.desc h2{
 	margin-top: 0px;
+}
+p a.reflink{
+	vertical-align: super;
+	font-size: 0.7em;
+}
+.referenceList li{
+	margin-top: 1em;
 }
