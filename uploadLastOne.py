@@ -19,10 +19,10 @@ def main():
 		exit()
 	
 	
-	locPictures = "F:/DRAWING/"
-	locTags = "F:/DRAWING/WEBSITE/2_tags.csv"
-	locMiniatures = "F:/DRAWING/WEBSITE/m/"
-	locHtml = "F:/DRAWING/WEBSITE/index.html"
+	locPictures = "C:/DRAWING/"
+	locTags = "C:/DRAWING/WEBSITE/2_tags.csv"
+	locMiniatures = "C:/DRAWING/WEBSITE/m/"
+	locHtml = "C:/DRAWING/WEBSITE/index.html"
 	accessToken = sys.argv[1]
 	branch = "main"
 	repoName = "pawell2418/pawell2418.github.io"
@@ -35,25 +35,30 @@ def main():
 		if (os.path.isfile(fileUrl) == False): continue
 		temp = f.split(".");
 		if (len(temp) < 2): continue
-		if (temp[1] != "jpg"): continue
+		fileExtension = temp[1].lower();
+		fileName = temp[0];
+		if ((fileExtension != "jpg") and (fileExtension != "png")): continue
 		dat = time.ctime(os.path.getmtime(fileUrl))
 		dat2 = datetime.datetime.strptime(dat, "%c")
 		dat3 = dat2.strftime("%Y-%m-%d")
-		listPics.append((fileUrl, f, dat3, dat2));
+		listPics.append((fileUrl, f, dat3, dat2, fileName, fileExtension));
 		
 	def comp(val):
 		return val[3]
 	listPics.sort(key=comp, reverse=True)
 	lastArt = listPics[0]
-	print("Last art is ", lastArt[1], " ", lastArt[2])
+	print("Last art is ", lastArt[1], " ", lastArt[2], " ", lastArt[4], " ", lastArt[5])
 	
+	miniatureFileName=lastArt[4] + ".jpg"
 	print("Making miniature")
-	newMiniatureLoc = os.path.join(locMiniatures, lastArt[1])
+	newMiniatureLoc = os.path.join(locMiniatures, miniatureFileName)
 	if (os.path.isfile(newMiniatureLoc)):
 		print("WE ALREADY UPLOADED THIS ONE!")
 		exit()
 	im = Image.open(lastArt[0])
 	im.thumbnail((128, 72), Image.LANCZOS)
+	if im.mode != 'RGB':
+		im = im.convert('RGB')
 	
 	rating = 0
 	while (True):
@@ -65,11 +70,11 @@ def main():
 
 	allTags = suckAllTags(locTags)
 	print("")
-	print("Dont forget:  doodle / study  / master")
-	print("				gimp / krita  / rebelle")
+	print("Dont forget:  doodle / study  / comm ")
+	print("				paintstorm / krita  / rebelle")
 	print("				digi / trad ")
 	print("		name of book / art ")
-	print("			  animal / object / machine")
+	print("			  animal / object / machine / house / drapery / nature")
 	print("			   color / outline/ mono")
 	print("  head / nude / body / male   / female ")
 	print("")
@@ -107,7 +112,7 @@ def main():
 	ft.close()
 	
 	#<a href='p/190.jpg' data-d='2022-12-28' data-r='5'><img src='m/190.jpg' title='digi,rebelle,color,study,nature,object,master,naturway'></a>
-	newHtml = "<a href='p/"+lastArt[1]+"' data-d='"+lastArt[2]+"' data-r='"+str(rating)+"'><img src='m/"+lastArt[1]+"' title='"+tagsmerged+"'></a>\n"
+	newHtml = "<a href='p/"+lastArt[1]+"' data-d='"+lastArt[2]+"' data-r='"+str(rating)+"'><img src='m/"+miniatureFileName+"' title='"+tagsmerged+"'></a>\n"
 	oldHtml = fhtml.readlines()
 	fhtml.close()
 	fhtml = open(locHtml, "w")
@@ -127,7 +132,7 @@ def main():
 	blob1 = repo.create_git_blob(uploadPicData.decode("utf-8"), "base64")
 	element1 =  github.InputGitTreeElement(path=uploadPicLoc, mode='100644', type='blob', sha=blob1.sha)
 	
-	uploadMiniLoc = "docs/m/" + lastArt[1]
+	uploadMiniLoc = "docs/m/" + miniatureFileName
 	uploadMiniData = base64.b64encode(open(newMiniatureLoc, "rb").read())
 	blob2 = repo.create_git_blob(uploadMiniData.decode("utf-8"), "base64")
 	element2 =  github.InputGitTreeElement(path=uploadMiniLoc, mode='100644', type='blob', sha=blob2.sha)
