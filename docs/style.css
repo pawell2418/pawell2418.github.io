@@ -108,7 +108,7 @@ h1.background {
 article p {
 	text-align: justify;
 	font-size: 1.2em;
-	max-width: 600px;
+	max-width: 55ch;
 	margin-left: 1em;
 	margin-top: 0.5em;
 }
@@ -139,7 +139,7 @@ article strong {
 	color: white;
 }
 .rating ul li {
-	max-width: 600px;
+	max-width: 55ch;
 	text-align: justify;
 	font-size: 1.2em;
 	margin-bottom: 0.5em;
@@ -225,7 +225,13 @@ div.clearleft {
 .tool .desc p {
 	text-align: justify;
     font-size: 1.2em;
-    max-width: 600px;
+    max-width: 55ch;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+.tool .desc ul {
+    font-size: 1.2em;
+    max-width: 55ch;
     margin-left: 1em;
     margin-top: 0.5em;
 }
@@ -239,7 +245,7 @@ ul#crits li {
 	font-style: italic;
 	text-align: justify;
 	list-style-type: none;
-	max-width: 800px;
+	max-width: 70ch;
 	clear: left;
 }
 ul#crits {
@@ -254,10 +260,11 @@ ul#crits li a{
 	float:left;
 }
 ul#crits li.year{
-	width: 100%;
-	text-align: right;
+	width: 70ch;
+	text-align: left;
 	padding: 10px;
 	margin-bottom: 20px;
+	margin-left: 40ch;
 	display:block;
 	float:left;
 	font-size: 30px;
