@@ -1,9 +1,10 @@
 body {
   background-color: #848484;
   padding: 2px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Tahoma, Arial, sans-serif;
   color: black;
-  min-width: 315px;
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
 }
 a:link {
   color: #01008b;
@@ -55,7 +56,7 @@ nav a:nth-child(even){
 hr {
 	padding: 5px;
 	margin-left: 0px;
-	width: 850px;
+	max-width: 80ch;
 	clear: left;
 	border: none;
 	border-bottom: 4px dashed;
@@ -65,10 +66,21 @@ hr {
 .filterOption {
 	display:block;
 	float: left;
-	height: 25px;
-	padding: 1px;
-	padding-top: 5px;
-	padding-right: 5px;
+	height: 30px;
+	padding: 3px;
+	font-size: 1.1rem;
+}
+.filterOption input[type=submit]{
+	text-align: center;
+	font-family: Tahoma, Arial, sans-serif;
+	color: black;
+	font-size: 1.2rem;
+}
+.filterOption input[type=reset]{
+	text-align: center;
+	font-family: Tahoma, Arial, sans-serif;
+	color: black;
+	font-size: 1.2rem;
 }
 .filterOption:nth-child(even){
 	background-color: #b3b3b3;
@@ -79,18 +91,18 @@ hr {
 h1.background {
 	margin: 0px;
 	padding: 0px;
-	font-size: 8px;
+	font-size: 0.5rem;
 }
 #filterOptionTags {
 	clear: left;
 }
 #filterOptionTags div {
 	float:left;
-	padding: 1px;
+	padding: 2px;
 	margin: 2px;
 	cursor: pointer;
 	min-width: 90px;
-	font-family: "Helvetica Narrow","Arial Narrow",Helvetica,sans-serif;
+	font-size: 1.0rem;
 }
 #filterOptionTags div:nth-child(even){
 	background-color: #b3b3b3;
@@ -107,76 +119,118 @@ h1.background {
 }
 article p {
 	text-align: justify;
-	font-size: 1.2em;
-	max-width: 55ch;
-	margin-left: 1em;
-	margin-top: 0.5em;
+	max-width: 70ch;
+	margin-top: 0.0rem;
+	margin-bottom: 1.0rem;
+}
+article ul {
+	padding-left: 2ch;
+	text-align: justify;
+	max-width: 68ch;
+	margin-top: 0px;
+}
+article ol {
+	padding-left: 2ch;
+	text-align: left;
+	max-width: 68ch;
+	margin-top: 0px;
 }
 article h1 {
-	font-size: 2em;
+	font-size: 2rem;
 	color: white;
-	margin-left: 0.7em;
-	margin-bottom: 0px;
+	margin-top: 2.0rem;
+	margin-bottom: 0.5px;
+	margin-left: 0.7rem;
 }
 article h2 {
-	margin-bottom: 0em;
-	margin-top: 1.2em;
-	margin-left: 0.7em;
+	font-size: 1.5rem;
+	margin-top: 2.0rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0.6rem;
 }
 article h3 {
-	margin-left: 2em;
+	font-size: 1.3rem;
+	margin-top: 2.0rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
+}
+article .fullpic {
+	width: 100%;
 }
 article div.left {
 	float: left;
 }
-article p.clearleft {
-	clear: left;
-}
-article ul {
-	margin-top: 0px;
-}
 article strong {
 	color: white;
 }
+article .split35 {
+	display: block;
+	float: left;
+	max-width: 24ch;
+}
+article .split65 {
+	display: block;
+	float: left;
+	max-width: 46ch;
+}
+article .splitpic {
+	width: 92%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer p.quote {
+	max-width: 70ch;
+	font-size: 1.2rem;
+	font-style: italic;
+}
+footer p {
+	max-width: 100ch;
+	font-size: 0.9rem;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+}
+
 .rating ul li {
 	max-width: 55ch;
 	text-align: justify;
-	font-size: 1.2em;
-	margin-bottom: 0.5em;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
 }
 div.left img {
-	margin-left: 1.5em;
+	margin-left: 1.5rem;
 }
 div.left li img {
 	margin-left: 0;
 }
 ul.book {
-	margin-bottom: 3em;
+	margin-bottom: 3rem;
 }
-div.clearleft {
+.clearleft {
 	clear: left;
 }
 .book {
 	clear:left;
-	margin-left: 1.5em;
+	padding-top: 2.5rem;
 }
-.cover {
+.book .cover {
 	float: left;
-	width: 260px;
-	margin-bottom: 50px;
+	max-width: 24ch;
 }
-.cover img {
-	max-height: 300px;
-	
+.book .cover img {
+	max-width: 95%;
 }
-.rating {
+.book .rating {
 	float: left;
-	margin-bottom: 30px;
+	max-width: 46ch;
 }
-.cover i {
-	font-size: 7px;
-	color: #5c5c5c;
-	white-space: nowrap;
+.book .cover i {
+	margin-top: 9px;
+	margin-bottom: 9px;
+	display: block;
+	clear: left;
+	font-size: 9px;
+	word-break: keep-all;
 }
 #bookpile .bok {
 	float: left;
@@ -206,42 +260,38 @@ div.clearleft {
 	font-size: 14px;
 }
 .tool {
-	clear:left;
+	clear: left;
+	max-width: 70ch;
+	padding-top: 2.5rem;
 }
 .tool .pic {
+	max-width: 30%;
+	min-width: 10ch;
 	display:block;
 	float: left;
 }
 .tool .desc {
+	max-width: 70%;
 	float: left;
 	display: block;
 }
+.tool .desc h2 {
+	margin-top: 0.0rem;
+}
 .tool .pic img {
-		margin-left: 20px;
-		margin-right: 5px;
-		max-width: 192px;
-		max-height: 256px;
+	width: 92%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
-.tool .desc p {
-	text-align: justify;
-    font-size: 1.2em;
-    max-width: 55ch;
-    margin-left: 1em;
-    margin-top: 0.5em;
-}
-.tool .desc ul {
-    font-size: 1.2em;
-    max-width: 55ch;
-    margin-left: 1em;
-    margin-top: 0.5em;
-}
-.tool .desc.canceled {
+
+.tool .canceled {
 	background-image: url("tool/canceled.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 ul#crits li {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-style: italic;
 	text-align: justify;
 	list-style-type: none;
@@ -263,11 +313,11 @@ ul#crits li.year{
 	width: 70ch;
 	text-align: left;
 	padding: 10px;
+	padding-left: 20rem;
 	margin-bottom: 20px;
-	margin-left: 40ch;
 	display:block;
 	float:left;
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: bold;
 }
 ul#crits li:nth-child(odd) a{
@@ -288,10 +338,10 @@ ul#crits li a:hover {
 ul#crits li a::before{
 	float:left;
 	display: block;
-	width: 2.1em;
-	height: 2.1em;
+	width: 2.1rem;
+	height: 2.1rem;
 	content: "";
-	background-size:2em;
+	background-size:2rem;
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 	margin-right: 5px;
@@ -305,32 +355,18 @@ ul#crits li.lol a::before{
 ul#crits li.yes a::before{
 	background-image: url("crit/yes.png");
 }
-.quote{
-	font-size: 1.2em;
-	font-style: italic;
-}
-div.project{
-	margin-top: 50px;
-	margin-bottom: 30px;
-	clear: left;
-}
-div.project a img{
-	margin-left: 20px;
-	margin-bottom: 30px;
-	float: left;
-	width: 260px;
-}
-div.project div.desc{
-	float: left;
-	margin-bottom: 30px;
-}
-div.project div.desc h2{
-	margin-top: 0px;
-}
+
 p a.reflink{
-	vertical-align: super;
-	font-size: 0.7em;
+	/*vertical-align: super;*/
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -0.5em;
+	font-size: 0.9rem;
 }
 .referenceList li{
-	margin-top: 1em;
+	margin-top: 1rem;
+} 
+.referenceList a{
+	word-break: break-all;
 }
