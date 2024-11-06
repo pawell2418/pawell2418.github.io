@@ -370,3 +370,64 @@ p a.reflink{
 .referenceList a{
 	word-break: break-all;
 }
+#penmania h2 {
+	clear: left;
+}
+#penmania .pen {
+	font-size: 1rem;
+	clear: left;
+	max-width: 100ch;
+    min-width: 40ch;
+}
+#penmania .pen img {
+	clear: left;
+	float: left;
+	width: 100%;
+    height: auto;
+	cursor: pointer;
+	/*padding-bottom: 3rem;*/
+}
+#penmania .pen .pdesc {
+	display: none;
+}
+#penmania .pen i {
+	font-style: normal;
+}
+#penmania .pen u {
+	text-decoration: none;
+}
+#penmania .pen .name {
+	font-size: 1.2rem;
+	float: left;
+}
+#penmania .pen .name i {
+	color: white;
+}
+#penmania .pen .name b {
+	color: white;
+}
+#penmania .pen .origin {
+	float: right;
+}
+#penmania .pen .price {
+	font-size: 1.2rem;
+	color: white;
+	clear: right;
+	float: right;
+}
+#penmania .pen .weight {
+	vertical-align: top;
+	clear: right;
+	float: right;
+}
+#penmania .pen .mech {
+	clear:left;
+	float: left;
+}
+#penmania .pen .body {
+	clear:left;
+	float: left;
+}
+#penmania .penh2 {
+	padding-top: 3.0rem;
+}
